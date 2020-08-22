@@ -14,8 +14,8 @@ const configutation = {
       input: Format.Text,
       output: Format.Buffer,
       handler: (input, output) => output.send(Buffer.from(input.body, 'base64')),
-    }
-  }
+    },
+  },
 };
 
 lambda(configutation);
